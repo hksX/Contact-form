@@ -1,0 +1,136 @@
+/* Reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff99cc, #ff6699);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.between-image {
+  display: block;
+  margin: 20px auto;
+  width: 200px; /* Custom width */
+  height: 200px; /* Custom height */
+  object-fit: cover; /* Ensures the image fits the box without stretching */
+  animation: fadeIn 1s ease-out;
+}
+
+
+.container {
+  perspective: 1000px;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #ffffff;
+}
+
+.card-back {
+  background-color: #f9f9f9;
+  transform: rotateY(180deg);
+}
+
+.card h2 {
+  color: #ff4b6a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+button.flip-btn {
+  padding: 12px 25px;
+  background: #ff4b6a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.flip-btn:hover {
+  background: #e04b61;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f1f1f1;
+}
+
+button[type='submit'] {
+  width: 100%;
+  padding: 12px;
+  background: #ff4b6a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background: #e04b61;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.success-message {
+  margin-top: 15px;
+  color: #16a34a;
+  text-align: center;
+  font-weight: bold;
+}
