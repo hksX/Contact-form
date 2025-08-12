@@ -22,5 +22,6 @@ This repository contains one `index.html` file that implements a contact form wi
 - Valid inputs → success message and form reset
 
 
-
-
+<img width="733" height="646" alt="Capture" src="https://github.com/user-attachments/assets/3e39a311-12e4-478e-a4aa-686b57e88878" />
+<img width="623" height="622" alt="Capture" src="https://github.com/user-attachments/assets/5d298d87-d02a-4e0e-8e16-a19e749023f3" />
+<img width="662" height="613" alt="im" src="https://github.com/user-attachments/assets/d65ffe4c-02ca-4dd8-8100-d746129aa8a6" />
